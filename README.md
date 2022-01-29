@@ -13,3 +13,14 @@ MAPF project about abstraction
   - [ ] corridor
   - [ ] crossroads
   - [ ] like in G-TAPF paper
+
+
+
+## Instances:
+### 20x20:
+![20x20 instance][instance_20]
+### large:
+![large instance][instance_xlarge]
+
+[instance_20]: ./instances/20.png
+[instance_xlarge]: ./instances/xlarge.png
