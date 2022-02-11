@@ -4,6 +4,8 @@ MAPF project about abstraction
 ## TO DO:
 - [x] add 2-3 benchmark instances
 - [x] modify asprilo for 8-connected grids
+  - [x] change definition of direction
+  - [x] add crossing collision
 - [ ] implement:
   - [ ] abstraction (cliques and orphans)
   - [ ] solving of abstraction
