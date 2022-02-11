@@ -21,6 +21,12 @@ position(R,C,T) :- position(R,C,T-1), not move(R,_,T), isRobot(R), time(T).
 moveto(C',C,T) :- nextto(C',D,C), position(R,C',T-1), move(R,D,T).
  :- moveto(C',C,T), moveto(C,C',T), C < C'.
 
+% - crossing collision ------------------------------------------------------------
+ :- moveto((X,Y),(X+1,Y+1),T), moveto((X+1,Y),(X,Y-1),T).
+ :- moveto((X+1,Y+1),(X,Y),T), moveto((X,Y-1),(X+1,Y),T).
+ :- moveto((X,Y),(X+1,Y+1),T), moveto((X,Y-1),(X+1,Y),T).
+ :- moveto((X+1,Y+1),(X,Y),T), moveto((X+1,Y),(X,Y-1),T).
+
 % - vertex collision ------------------------------------------------------------
  :- { position(R,C,T) : isRobot(R) }  > 1, position(C), time(T).
 
