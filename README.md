@@ -9,8 +9,9 @@ MAPF project about abstraction
 - [ ] implement:
   - [ ] abstraction WIP
     - [x] cliques
+      - [ ] connectedness of cliques
+      - [ ] maximization of clique sizes
     - [ ] orphans
-    - [ ] connectedness of cliques
     - [ ] visualisation (clingraph)
     - [ ] level
   - [ ] solving of abstraction
