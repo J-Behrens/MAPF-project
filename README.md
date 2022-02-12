@@ -7,7 +7,12 @@ MAPF project about abstraction
   - [x] change definition of direction
   - [x] add crossing collision
 - [ ] implement:
-  - [ ] abstraction (cliques and orphans)
+  - [ ] abstraction WIP
+    - [x] cliques
+    - [ ] orphans
+    - [ ] connectedness of cliques
+    - [ ] visualisation (clingraph)
+    - [ ] level
   - [ ] solving of abstraction
   - [ ] extending asprilo with constraints from solved abstraction
 - [ ] run benchmarks
