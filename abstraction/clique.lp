@@ -4,12 +4,20 @@ nextto((X,Y),(DX,DY),(X',Y')) :- direction((DX,DY)), position((X,Y)), position((
 
 nextto(P,P2) :- nextto(P,D,P2).
 
-clique(1).
+in_clique(P) :- 1={clique(P);
+                   clique(P,_); clique(_,P);
+                   clique(P,_,_); clique(_,P,_); clique(_,_,P);
+                   clique(P,_,_,_); clique(_,P,_,_); clique(_,_,P,_); clique(_,_,_,P)},
+                   position(P).
 
-1{clique(I,P) : clique(I)} :- position(P).
-:- clique(I,P), clique(I,P'), not nextto(P,P'), P>P'.
-clique(I+1) :- not clique(_,P), position(P), clique(I).
+:- not in_clique(P), position(P).
 
-% Verbundenheit von cliques: wenn 2 position aus 2 cliques verbunden dann sind die cliques verbunden
+{clique(P)             : position(P)}.
+{clique(P,P')          : nextto(P,P')}.
+{clique(P,P',P'')      : nextto(P,P'), nextto(P,P''), nextto(P',P'')}.
+{clique(P,P',P'',P''') : nextto(P,P'), nextto(P,P''), nextto(P,P'''), nextto(P',P''), nextto(P',P'''), nextto(P'',P''')}.
 
+#show clique/4.
+#show clique/3.
 #show clique/2.
+#show clique/1.
