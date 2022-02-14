@@ -2,18 +2,18 @@
 MAPF project about abstraction
 
 ## TO DO:
-- [x] add 2-3 benchmark instances
-- [x] modify asprilo for 8-connected grids
+- [x] add 2-3 [benchmark instances](/instances)
+- [x] modify [asprilo for 8-connected grids](/asprilo/m/action-M-8.lp)
   - [x] change definition of direction
   - [x] add crossing collision
 - [ ] implement:
-  - [ ] abstraction WIP
+  - [ ] [abstraction](/abstraction/clique.lp) WIP
     - [x] cliques
-      - [ ] connectedness of cliques
-      - [ ] maximization of clique sizes
+    - [ ] connectedness of cliques
+    - [ ] maximization of clique sizes
     - [ ] orphans
-    - [ ] visualisation (clingraph)
     - [ ] level
+  - [ ] visualisation (clingraph)
   - [ ] solving of abstraction
   - [ ] extending asprilo with constraints from solved abstraction
 - [ ] run benchmarks
