@@ -9,11 +9,11 @@ MAPF project about abstraction
 - [ ] implement:
   - [ ] [abstraction](/abstraction/clique.lp) WIP
     - [x] cliques
-    - [ ] connectedness of cliques
-    - [ ] maximization of clique sizes
+    - [x] edges                        (inefficient)
+    - [x] maximization of clique sizes (inefficient)
     - [ ] orphans
-    - [ ] level
-  - [ ] visualisation (clingraph)
+    - [x] level
+  - [x] visualisation (clingraph)
   - [ ] solving of abstraction
   - [ ] extending asprilo with constraints from solved abstraction
 - [ ] run benchmarks
