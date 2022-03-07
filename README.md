@@ -7,14 +7,14 @@ MAPF project about abstraction
   - [x] change definition of direction
   - [x] add crossing collision
 - [ ] implement:
-  - [ ] [abstraction](/abstraction/clique.lp) WIP
+  - [x] [abstraction](/abstraction/clique.lp)
     - [x] cliques
     - [x] edges                        (inefficient)
-    - [x] maximization of clique sizes (inefficient)
-    - [ ] orphans
+    - [x] "minimization" of clique sizes (via heuristic)
+    - [ ] (orphans)
     - [x] level
   - [x] visualisation (clingraph)
-  - [ ] solving of abstraction
+  - [ ] solving of abstraction WIP
   - [ ] extending asprilo with constraints from solved abstraction
 - [ ] run benchmarks
 - [ ] try other abstraction:
