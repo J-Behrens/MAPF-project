@@ -25,10 +25,16 @@ MAPF project about abstraction
 
 
 ## Instances:
+### 0-shaped:
+![0 instance][instance_0]
+### 8-shaped:
+![8 instance][instance_8]
 ### 20x20:
 ![20x20 instance][instance_20]
 ### large:
 ![large instance][instance_xlarge]
 
+[instance_0]: ./instances/0.png
+[instance_8]: ./instances/8.png
 [instance_20]: ./instances/20.png
 [instance_xlarge]: ./instances/xlarge.png
