@@ -6,7 +6,7 @@ MAPF project about abstraction
 - [x] modify [asprilo for 8-connected grids](/asprilo/m/action-M-8.lp)
   - [x] change definition of direction
   - [x] add crossing collision
-- [ ] implement:
+- [x] implement:
   - [x] [abstraction](/abstraction/clique.lp)
     - [x] cliques
     - [x] edges                        (inefficient)
@@ -14,8 +14,8 @@ MAPF project about abstraction
     - [ ] (orphans)
     - [x] level
   - [x] visualisation (clingraph)
-  - [ ] solving of abstraction WIP
-  - [ ] extending asprilo with constraints from solved abstraction
+  - [x] solving of abstraction
+  - [x] solving of original instance using information of higher level solutions
 - [ ] run benchmarks
 - [ ] try other abstraction:
   - [ ] corridor
