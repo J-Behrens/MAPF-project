@@ -50,6 +50,9 @@ at(R,C2,L,0) :- init(object(robot,R),value(at,(X,Y))), node(C,X,Y), n_is_in_c(C2
 % Keep order of higher levels:
 :- at(R,N,L,T), at(R,N2,L,T2), at(R,C,L+1,T3), at(R,C2,L+1,T4), c_is_in_c(C,N,L+1), c_is_in_c(C2,N2,L+1), T>T2, T3<T4.
 
+% Robot cannot be at more than one position per timestep:
+:- at(R,N,L,T), at(R,N2,L,T), N!=N2.
+
 % Goal:
 goal(N) :- init(object(order,O),value(line,(A,_))), init(object(product,A),value(on,(S,_))), init(object(shelf,S),value(at,(X,Y))), node(N,X,Y).
 at_goal(N,L) :- goal(N), n_is_in_c(C,N,L), at(R,C,L,_), init(object(robot,R),_), L<=M, max_level(M).
